@@ -2,7 +2,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:powerdart/src/math/linspace.dart';
 
-import 'utils/truncate.dart';
+import '../utils/truncate.dart';
 
 void main() {
   test('create a linear space of 50 elements', () {
