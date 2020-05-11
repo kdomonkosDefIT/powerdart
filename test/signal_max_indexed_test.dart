@@ -1,6 +1,6 @@
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:powerdart/src/signal_max_indexed.dart';
+import 'package:powerdart/src/psd_analysis/signal_max_indexed.dart';
 
 void main() {
   test("max indexed", () {

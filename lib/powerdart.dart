@@ -4,9 +4,9 @@ library powerdart;
 export 'src/psd.dart';
 
 // Method to integrate a signal
-export 'src/trapz.dart';
-export 'src/cumtrapz.dart';
+export 'src/psd_analysis/trapz.dart';
+export 'src/psd_analysis/cumtrapz.dart';
 
 // Method to analyze the PSD
-export 'src/signal_max_indexed.dart';
-export 'src/signal_find.dart';
+export 'src/psd_analysis/signal_max_indexed.dart';
+export 'src/psd_analysis/signal_find.dart';

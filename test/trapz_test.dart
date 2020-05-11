@@ -1,6 +1,6 @@
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:powerdart/src/trapz.dart';
+import 'package:powerdart/src/psd_analysis/trapz.dart';
 
 void main() {
   test('trapz y and x', () {

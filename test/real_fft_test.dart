@@ -1,7 +1,7 @@
 
 import 'package:complex/complex.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:powerdart/src/real_fft.dart';
+import 'package:powerdart/src/dft/real_fft.dart';
 
 import 'utils/complexListTruncate.dart';
 

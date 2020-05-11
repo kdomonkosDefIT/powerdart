@@ -1,7 +1,7 @@
 
 import 'package:complex/complex.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:powerdart/src/dft.dart';
+import 'package:powerdart/src/dft/dft.dart';
 
 import 'utils/truncate.dart';
 

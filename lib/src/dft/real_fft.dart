@@ -1,6 +1,6 @@
 
 import 'package:complex/complex.dart';
-import 'package:powerdart/src/fft.dart';
+import 'package:powerdart/src/dft/fft.dart';
 
 ///  Compute the one-dimensional discrete Fourier Transform for a Real input.
 ///  [x]: A [List] of [double] value to compute

@@ -4,7 +4,7 @@ import 'package:powerdart/src/math/signal_abs.dart';
 import 'package:powerdart/src/math/signal_detrend.dart';
 import 'package:powerdart/src/math/signal_pow.dart';
 import 'package:powerdart/src/math/signal_times_number.dart';
-import 'package:powerdart/src/real_fft.dart';
+import 'package:powerdart/src/dft/real_fft.dart';
 
 /// Compute the Power Spectral Density
 ///
