@@ -37,7 +37,7 @@ packages:
     source: hosted
     version: "1.14.12"
   complex:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: complex
       url: "https://pub.dartlang.org"

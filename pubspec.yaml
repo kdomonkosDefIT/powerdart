@@ -1,8 +1,9 @@
 name: powerdart
-description: Compute the Power Spectral Density (PSD) on Dart.
+description: Compute the Power Spectral Density (PSD) on Flutter.
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/Supercaly/powerdart
+repository: https://github.com/Supercaly/powerdart
+issue_tracker: https://github.com/Supercaly/powerdart/issues
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -10,11 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # Dependency for complex numbers
+  complex: ^0.5.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  complex: ^0.5.0
-
-flutter:
