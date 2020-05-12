@@ -5,6 +5,7 @@ import 'package:powerdart/src/math/signal_detrend.dart';
 import 'package:powerdart/src/math/signal_pow.dart';
 import 'package:powerdart/src/math/signal_times_number.dart';
 import 'package:powerdart/src/dft/real_fft.dart';
+import 'package:powerdart/src/model/psd_result.dart';
 
 /// Compute the Power Spectral Density
 ///
@@ -38,8 +39,7 @@ PsdResult psd(List<double> data, double fs) {
   }
 
   // Compute the normalized frequency vector
-  final freq = linspace(0, (fs / 2) + 1, num: (fs/2).floor() + 1);
-  //print(freq);
+  final freq = linspace(0, (fs / 2), num: psd.length, endpoint: false);
 
   return PsdResult(psd,freq);
 }
