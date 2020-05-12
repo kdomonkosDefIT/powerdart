@@ -22,9 +22,7 @@ import 'package:powerdart/src/dft/real_fft.dart';
 /// ```
 /// [data]: [List] of [double] with the signal to compute
 /// [fs]: sample rate of the signal
-/// Returns a [Map] of: pxx (the psd) and f (the normalized
-/// frequency vector).
-Map<String, List<double>> psd(List<double> data, double fs) {
+PsdResult psd(List<double> data, double fs) {
   assert(data.isNotEmpty, "Input data must not be empty");
   assert(fs > 0, "Fs must be greather than 0");
 
@@ -43,8 +41,5 @@ Map<String, List<double>> psd(List<double> data, double fs) {
   final freq = linspace(0, (fs / 2) + 1, num: (fs/2).floor() + 1);
   //print(freq);
 
-  return {
-    "pxx": psd,
-    "f": freq,
-  };
+  return PsdResult(psd,freq);
 }

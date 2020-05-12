@@ -34,8 +34,8 @@ void main() {
     await signalFile.writeAsString(signalString);
 
     String psdString = '';
-    for (var i = 0; i < psdRes["pxx"].length; i++) {
-      psdString += '${psdRes["pxx"][i]}, ${psdRes["f"][i]}\n';
+    for (var i = 0; i < psdRes.pxx.length; i++) {
+      psdString += '${psdRes.pxx[i]}, ${psdRes.f[i]}\n';
     }
     await psdFile.writeAsString(psdString);
   });

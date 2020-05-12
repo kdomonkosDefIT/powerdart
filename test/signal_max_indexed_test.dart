@@ -1,5 +1,6 @@
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:powerdart/src/model/max_indexed_result.dart';
 import 'package:powerdart/src/psd_analysis/signal_max_indexed.dart';
 
 void main() {
@@ -18,12 +19,12 @@ void main() {
       -1.9,
       1.9,
     ];
-    final expected = [7.5, 1.0];
+    final expected = MaxIndexedResult(7.5, 1);
     expect(maxIndexed(input), expected);
   });
 
   test("max indexed with one-length input", () {
-    expect(maxIndexed([2.0]), [2.0, 0.0]);
+    expect(maxIndexed([2.0]), MaxIndexedResult(2.0, 0));
   });
 
   test("max indexed throws an error", () {
