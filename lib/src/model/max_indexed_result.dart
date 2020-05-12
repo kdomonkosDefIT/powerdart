@@ -1,4 +1,3 @@
-
 /// This class hold the result of the maxIndexed
 ///
 /// This class is used to simply and safely store the
@@ -12,8 +11,10 @@ class MaxIndexedResult {
   MaxIndexedResult(this.value, this.index);
 
   @override
-  bool operator ==(other) => other is MaxIndexedResult &&
-    this.value == other.value && this.index == other.index;
+  bool operator ==(other) =>
+      other is MaxIndexedResult &&
+      this.value == other.value &&
+      this.index == other.index;
 
   @override
   int get hashCode => this.value.hashCode ^ this.index.hashCode;

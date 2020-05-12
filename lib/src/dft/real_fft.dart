@@ -1,4 +1,3 @@
-
 import 'package:complex/complex.dart';
 import 'package:powerdart/src/dft/fft.dart';
 

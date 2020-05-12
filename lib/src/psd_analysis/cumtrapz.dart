@@ -1,4 +1,3 @@
-
 /// Returns the cumulative approximate integral of [y] via the trapezoidal
 /// method with respect to the coordinates or scalar spacing
 /// specified by [x].
@@ -16,7 +15,8 @@ List<double> cumtrapz(List<double> y, List<double> x) {
   double sum = 0.0;
   final b = List<double>(y.length - 1);
   for (var i = 0; i < y.length - 1; i++) {
-    sum += (xSlice2.elementAt(i) - xSlice1.elementAt(i)) * ((ySlice1.elementAt(i) + ySlice2.elementAt(i)) / 2.0);
+    sum += (xSlice2.elementAt(i) - xSlice1.elementAt(i)) *
+        ((ySlice1.elementAt(i) + ySlice2.elementAt(i)) / 2.0);
     b[i] = sum;
   }
   return b;

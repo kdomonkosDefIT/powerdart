@@ -1,4 +1,3 @@
-
 /// Returns the approximate integral of [y] via the trapezoidal
 /// method with respect to the coordinates or scalar spacing
 /// specified by [x].
@@ -19,8 +18,11 @@ double trapz(List<double> y, List<double> x) {
   final ySlice2 = y.getRange(1, y.length);
 
   // Return the sum
-  return List.generate(y.length - 1, (idx) =>
-    (xSlice2.elementAt(idx) - xSlice1.elementAt(idx)) *
-      (ySlice1.elementAt(idx) + ySlice2.elementAt(idx)))
-    .reduce((value, element) => value + element) / 2.0;
+  return List.generate(
+              y.length - 1,
+              (idx) =>
+                  (xSlice2.elementAt(idx) - xSlice1.elementAt(idx)) *
+                  (ySlice1.elementAt(idx) + ySlice2.elementAt(idx)))
+          .reduce((value, element) => value + element) /
+      2.0;
 }

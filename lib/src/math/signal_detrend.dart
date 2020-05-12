@@ -1,4 +1,3 @@
-
 import 'package:powerdart/src/math/signal_average.dart';
 
 /// Detrend the given signal.

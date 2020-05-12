@@ -1,4 +1,3 @@
-
 import 'package:powerdart/src/math/linspace.dart';
 import 'package:powerdart/src/math/signal_abs.dart';
 import 'package:powerdart/src/math/signal_detrend.dart';
@@ -41,5 +40,5 @@ PsdResult psd(List<double> data, double fs) {
   // Compute the normalized frequency vector
   final freq = linspace(0, (fs / 2), num: psd.length, endpoint: false);
 
-  return PsdResult(psd,freq);
+  return PsdResult(psd, freq);
 }

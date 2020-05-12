@@ -1,4 +1,3 @@
-
 /// This class hold the result of the PSD computation
 ///
 /// This class is used to simply and safely store the
@@ -18,6 +17,6 @@ class PsdResult {
   int get hashCode => pxx.hashCode ^ f.hashCode;
 
   @override
-  bool operator ==(other) => other is PsdResult &&
-    this.pxx == other.pxx && this.f == other.f;
+  bool operator ==(other) =>
+      other is PsdResult && this.pxx == other.pxx && this.f == other.f;
 }

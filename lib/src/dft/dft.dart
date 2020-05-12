@@ -1,4 +1,3 @@
-
 import 'dart:math' as math;
 
 import 'package:complex/complex.dart';
@@ -18,10 +17,9 @@ List<Complex> dft(List<Complex> x) {
     for (int t = 0; t < n; t++) {
       // For each input element
       double angle = 2 * math.pi * t * k / n;
-      sumreal += x[t].real * math.cos(angle) +
-        x[t].imaginary * math.sin(angle);
-      sumimag += -x[t].real * math.sin(angle) +
-        x[t].imaginary * math.cos(angle);
+      sumreal += x[t].real * math.cos(angle) + x[t].imaginary * math.sin(angle);
+      sumimag +=
+          -x[t].real * math.sin(angle) + x[t].imaginary * math.cos(angle);
     }
     out[k] = Complex(sumreal, sumimag);
   }

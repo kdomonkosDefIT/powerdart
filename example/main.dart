@@ -1,8 +1,6 @@
-
 import 'dart:math';
 
 import 'package:powerdart/powerdart.dart';
-import 'package:powerdart/src/math/linspace.dart';
 
 void main() {
   final double fs = 100.0;
@@ -16,6 +14,6 @@ void main() {
   final psdRes = psd(x, fs);
 
   // Find where the 70% of the power is
-  final area = cumtrapz(psdRes["pxx"], psdRes["f"]);
+  final area = cumtrapz(psdRes.pxx, psdRes.f);
   final powerDistribution = find(area, (e) => e >= 0.70 * area.last);
 }

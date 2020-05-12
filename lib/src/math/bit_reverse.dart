@@ -1,5 +1,3 @@
-
-
 ///  Rotate to left the bits of a int number n times
 ///  [n]: number
 ///  [bits] : number of rotations

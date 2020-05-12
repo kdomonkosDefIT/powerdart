@@ -1,4 +1,3 @@
-
 ///  Return evenly spaced numbers over a specified interval.
 ///
 ///  Returns `num` evenly spaced samples, calculated over the
@@ -17,11 +16,10 @@
 ///
 /// This class is inspired by the package scidart
 /// https://github.com/scidart/scidart/blob/master/lib/src/numdart/spaces/linspace.dart
-List<double> linspace(double start, double stop, {int num = 100, bool endpoint=true}) {
+List<double> linspace(double start, double stop,
+    {int num = 100, bool endpoint = true}) {
   assert(num >= 0, "num need be >= than 0");
 
-  double delta = endpoint
-    ? (stop - start) / (num - 1)
-    : (stop - start) / num;
-  return List<double>.generate(num, (i) => start + delta*i);
+  double delta = endpoint ? (stop - start) / (num - 1) : (stop - start) / num;
+  return List<double>.generate(num, (i) => start + delta * i);
 }
