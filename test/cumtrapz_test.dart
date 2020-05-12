@@ -1,5 +1,4 @@
-
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 import 'package:powerdart/src/psd_analysis/cumtrapz.dart';
 import 'package:powerdart/src/math/linspace.dart';
 
@@ -33,8 +32,7 @@ void main() {
       -2.77555756e-16
     ];
 
-    for (var i = 0; i < b.length; i++)
-      b[i] = truncate(b[i], 4);
+    for (var i = 0; i < b.length; i++) b[i] = truncate(b[i], 4);
     for (var i = 0; i < bExpected.length; i++)
       bExpected[i] = truncate(bExpected[i], 4);
 
@@ -42,8 +40,8 @@ void main() {
   });
 
   test('trapz array y and dx', () {
-    expect(() => cumtrapz([], [1.0, 2.0]), throwsAssertionError);
-    expect(() => cumtrapz([1.0, 2.0], []), throwsAssertionError);
-    expect(() => cumtrapz([1.0, 2.0], [1.0]), throwsAssertionError);
+    expect(() => cumtrapz([], [1.0, 2.0]), throwsA(isA<AssertionError>()));
+    expect(() => cumtrapz([1.0, 2.0], []), throwsA(isA<AssertionError>()));
+    expect(() => cumtrapz([1.0, 2.0], [1.0]), throwsA(isA<AssertionError>()));
   });
 }

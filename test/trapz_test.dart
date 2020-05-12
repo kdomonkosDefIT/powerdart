@@ -1,5 +1,4 @@
-
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 import 'package:powerdart/src/psd_analysis/trapz.dart';
 
 void main() {
@@ -12,8 +11,8 @@ void main() {
   });
 
   test('trapz array y and dx', () {
-    expect(() => trapz([], [1.0, 2.0]), throwsAssertionError);
-    expect(() => trapz([1.0, 2.0], []), throwsAssertionError);
-    expect(() => trapz([1.0, 2.0], [1.0]), throwsAssertionError);
+    expect(() => trapz([], [1.0, 2.0]), throwsA(isA<AssertionError>()));
+    expect(() => trapz([1.0, 2.0], []), throwsA(isA<AssertionError>()));
+    expect(() => trapz([1.0, 2.0], [1.0]), throwsA(isA<AssertionError>()));
   });
 }

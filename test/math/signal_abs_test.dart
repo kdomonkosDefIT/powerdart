@@ -1,5 +1,4 @@
-
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 import 'package:complex/complex.dart';
 import 'package:powerdart/src/math/signal_abs.dart';
 
@@ -15,12 +14,13 @@ void main() {
       Complex(-57.0),
       Complex(412),
     ];
-    List<double> expected = [1.0,3.0,7.0,3.0,57.0,412];
+    List<double> expected = [1.0, 3.0, 7.0, 3.0, 57.0, 412];
 
     expect(abs(val), equals(expected));
   });
 
-  test("magnitude of complex with real 0 equals the abs of the imaginary part", () {
+  test("magnitude of complex with real 0 equals the abs of the imaginary part",
+      () {
     List<Complex> val = [
       Complex(0, 1.0),
       Complex(0, -3.0),
@@ -29,12 +29,13 @@ void main() {
       Complex(0, -57.0),
       Complex(0, 412),
     ];
-    List<double> expected = [1.0,3.0,7.0,3.0,57.0,412];
+    List<double> expected = [1.0, 3.0, 7.0, 3.0, 57.0, 412];
 
     expect(abs(val), equals(expected));
   });
 
-  test("magnitude of complex with real and imaginary part not 0 is correct", () {
+  test("magnitude of complex with real and imaginary part not 0 is correct",
+      () {
     List<Complex> val = [
       Complex(1.0, 1.0),
       Complex(-5.0, -3.0),
@@ -43,7 +44,7 @@ void main() {
       Complex(28.0, -57.0),
       Complex(-210, 412),
     ];
-    List<double> expected = [1.4142,5.8310,7.2801,6.7082,63.5059,462.4327];
+    List<double> expected = [1.4142, 5.8310, 7.2801, 6.7082, 63.5059, 462.4327];
 
     final absRes = abs(val);
     for (var i = 0; i < absRes.length; i++) {

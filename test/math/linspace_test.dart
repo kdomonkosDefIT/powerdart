@@ -1,5 +1,4 @@
-
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 import 'package:powerdart/src/math/linspace.dart';
 
 import '../utils/truncate.dart';
@@ -64,7 +63,7 @@ void main() {
     var fractionDigits = 8;
     for (var i = 0; i < n.length; i++) {
       expect(
-        truncate(n[i], fractionDigits), truncate(expectN[i], fractionDigits));
+          truncate(n[i], fractionDigits), truncate(expectN[i], fractionDigits));
     }
 
     expect(n.length, expectN.length);
@@ -129,7 +128,7 @@ void main() {
     var fractionDigits = 8;
     for (var i = 0; i < n.length; i++) {
       expect(
-        truncate(n[i], fractionDigits), truncate(nExpect[i], fractionDigits));
+          truncate(n[i], fractionDigits), truncate(nExpect[i], fractionDigits));
     }
 
     expect(n.length, nExpect.length);
@@ -143,7 +142,7 @@ void main() {
     var fractionDigits = 8;
     for (var i = 0; i < n.length; i++) {
       expect(
-        truncate(n[i], fractionDigits), truncate(nExpect[i], fractionDigits));
+          truncate(n[i], fractionDigits), truncate(nExpect[i], fractionDigits));
     }
 
     expect(n.length, nExpect.length);
@@ -157,7 +156,7 @@ void main() {
     var fractionDigits = 8;
     for (var i = 0; i < n.length; i++) {
       expect(
-        truncate(n[i], fractionDigits), truncate(nExpect[i], fractionDigits));
+          truncate(n[i], fractionDigits), truncate(nExpect[i], fractionDigits));
     }
 
     expect(n.length, nExpect.length);

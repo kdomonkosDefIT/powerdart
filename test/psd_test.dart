@@ -1,8 +1,7 @@
-
 import 'dart:io';
 import 'dart:math' as math;
 
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 import 'package:powerdart/src/math/linspace.dart';
 import 'package:powerdart/src/psd.dart';
 
@@ -15,15 +14,15 @@ void main() {
     x = t.map((e) => math.cos(2 * math.pi * 87 * e)).toList();
   });
 
-  test("compute psd of a signal", () async{
+  test("compute psd of a signal", () async {
     final psdRes = psd(x, fs);
     // Export the signal and the psd to files
     File signalFile = Directory.current.path.endsWith("/test")
-      ? File("test_results/signal.txt")
-      : File("test/test_results/signal.txt");
+        ? File("test_results/signal.txt")
+        : File("test/test_results/signal.txt");
     File psdFile = Directory.current.path.endsWith("/test")
-      ? File("test_results/psd.txt")
-      : File("test/test_results/psd.txt");
+        ? File("test_results/psd.txt")
+        : File("test/test_results/psd.txt");
     await signalFile.create(recursive: true);
     await psdFile.create(recursive: true);
 
@@ -41,8 +40,8 @@ void main() {
   });
 
   test("psd throws assertion", () {
-    expect(() => psd([], 50), throwsAssertionError);
+    expect(() => psd([], 50), throwsA(isA<AssertionError>()));
 
-    expect(() => psd([1.0, 2.0, 3.0], -20), throwsAssertionError);
+    expect(() => psd([1.0, 2.0, 3.0], -20), throwsA(isA<AssertionError>()));
   });
 }

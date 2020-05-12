@@ -1,5 +1,4 @@
-
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 import 'package:powerdart/src/math/bit_reverse.dart';
 
 void main() {

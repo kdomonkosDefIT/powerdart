@@ -1,5 +1,4 @@
-
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 import 'package:powerdart/src/model/max_indexed_result.dart';
 import 'package:powerdart/src/psd_analysis/signal_max_indexed.dart';
 
@@ -8,8 +7,7 @@ void main() {
     List<double> input = [
       -3.9,
       7.5,
-      0.0
-      -1.0,
+      0.0 - 1.0,
       1.3,
       1.5,
       -1.7,
@@ -28,6 +26,6 @@ void main() {
   });
 
   test("max indexed throws an error", () {
-    expect(() => maxIndexed([]), throwsAssertionError);
+    expect(() => maxIndexed([]), throwsA(isA<AssertionError>()));
   });
 }

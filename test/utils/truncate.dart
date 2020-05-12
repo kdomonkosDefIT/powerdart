@@ -1,4 +1,3 @@
-
 import 'dart:math' as math;
 
 double truncate(double val, int fractionDigits) {

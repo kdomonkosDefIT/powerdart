@@ -1,6 +1,5 @@
-
+import 'package:test/test.dart';
 import 'package:complex/complex.dart';
-import 'package:flutter_test/flutter_test.dart';
 import 'package:powerdart/src/dft/fft.dart';
 
 import 'utils/truncate.dart';
@@ -33,9 +32,9 @@ void main() {
       var fractionDigits = 8;
       for (var i = 0; i < X.length; i++) {
         expect(truncate(X[i].real, fractionDigits),
-          truncate(expectedX[i].real, fractionDigits));
+            truncate(expectedX[i].real, fractionDigits));
         expect(truncate(X[i].imaginary, fractionDigits),
-          truncate(expectedX[i].imaginary, fractionDigits));
+            truncate(expectedX[i].imaginary, fractionDigits));
       }
     });
 
@@ -63,9 +62,9 @@ void main() {
       var fractionDigits = 8;
       for (var i = 0; i < X.length; i++) {
         expect(truncate(X[i].real, fractionDigits),
-          truncate(expectedX[i].real, fractionDigits));
+            truncate(expectedX[i].real, fractionDigits));
         expect(truncate(X[i].imaginary, fractionDigits),
-          truncate(expectedX[i].imaginary, fractionDigits));
+            truncate(expectedX[i].imaginary, fractionDigits));
       }
     });
   });
