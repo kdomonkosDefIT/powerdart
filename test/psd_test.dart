@@ -7,7 +7,7 @@ import 'package:powerdart/src/psd.dart';
 
 void main() {
   final double fs = 100.0;
-  List<double> x;
+  late List<double> x;
 
   setUp(() {
     List<double> t = linspace(0, 1, num: fs.toInt(), endpoint: false);

@@ -9,7 +9,7 @@ import 'package:complex/complex.dart';
 ///  https://github.com/scidart/scidart/blob/master/lib/src/scidart/fftpack/fft/fft.dart
 List<Complex> dft(List<Complex> x) {
   int n = x.length;
-  var out = List<Complex>(n);
+  var out = <Complex>[];
   for (int k = 0; k < n; k++) {
     // For each output element
     double sumreal = 0;
@@ -21,7 +21,7 @@ List<Complex> dft(List<Complex> x) {
       sumimag +=
           -x[t].real * math.sin(angle) + x[t].imaginary * math.cos(angle);
     }
-    out[k] = Complex(sumreal, sumimag);
+    out.add(Complex(sumreal, sumimag));
   }
 
   return out;
