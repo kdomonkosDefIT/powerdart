@@ -10,11 +10,6 @@ void main() {
     expect(signalTimesNum(val, num), equals(expected));
   });
 
-  test("signal times a null", () {
-    List<double> val = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0];
-    expect(() => signalTimesNum(val, null), throwsA(isA<AssertionError>()));
-  });
-
   test("empty signal times a double is empty", () {
     List<double> val = [];
     double num = 2.0;

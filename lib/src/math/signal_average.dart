@@ -4,5 +4,5 @@
 /// If the signal is empty will return [double.nan].
 double average(List<num> signal) {
   if (signal.isEmpty) return double.nan;
-  return signal.fold(0.0, (prev, e) => prev + e.toDouble()) / signal.length;
+  return signal.fold<double>(0.0, (prev, e) => prev + e.toDouble()) / signal.length;
 }

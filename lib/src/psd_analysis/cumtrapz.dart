@@ -13,11 +13,11 @@ List<double> cumtrapz(List<double> y, List<double> x) {
   final ySlice2 = y.getRange(1, y.length);
 
   double sum = 0.0;
-  final b = List<double>(y.length - 1);
+  final b = <double>[];
   for (var i = 0; i < y.length - 1; i++) {
     sum += (xSlice2.elementAt(i) - xSlice1.elementAt(i)) *
         ((ySlice1.elementAt(i) + ySlice2.elementAt(i)) / 2.0);
-    b[i] = sum;
+    b.add(sum);
   }
   return b;
 }
