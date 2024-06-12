@@ -1,4 +1,4 @@
-name: powerdart
+name: powerdart_v2
 description: >-
   Updated version of Lorenzo Calisti's powerdart
   Compute the Power Spectral Density (PSD) on Dart.
