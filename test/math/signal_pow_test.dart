@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:powerdart/src/math/signal_pow.dart';
+import 'package:powerdart_v2/src/math/signal_pow.dart';
 
 void main() {
   test("elevate the signal to power 2", () {

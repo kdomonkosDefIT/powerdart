@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 import 'package:complex/complex.dart';
-import 'package:powerdart/src/math/signal_abs.dart';
+import 'package:powerdart_v2/src/math/signal_abs.dart';
 
 import '../utils/truncate.dart';
 

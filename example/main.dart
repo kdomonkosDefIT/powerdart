@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:powerdart/powerdart.dart';
+import 'package:powerdart_v2/powerdart.dart';
 
 void main() {
   final double fs = 100.0;

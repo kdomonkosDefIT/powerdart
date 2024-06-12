@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:powerdart/src/math/signal_times_number.dart';
+import 'package:powerdart_v2/src/math/signal_times_number.dart';
 
 void main() {
   test("signal times a double", () {

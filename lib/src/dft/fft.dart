@@ -1,8 +1,8 @@
 import 'dart:math' as math;
 
 import 'package:complex/complex.dart';
-import 'package:powerdart/src/dft/dft.dart';
-import 'package:powerdart/src/math/bit_reverse.dart';
+import 'package:powerdart_v2/src/dft/dft.dart';
+import 'package:powerdart_v2/src/math/bit_reverse.dart';
 
 ///  Compute the one-dimensional discrete Fourier Transform.
 ///  [x]: A [List] of [Complex] values to compute

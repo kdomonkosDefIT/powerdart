@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 import 'package:complex/complex.dart';
-import 'package:powerdart/src/dft/fft.dart';
+import 'package:powerdart_v2/src/dft/fft.dart';
 
 import 'utils/truncate.dart';
 

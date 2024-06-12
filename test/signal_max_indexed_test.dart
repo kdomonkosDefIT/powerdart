@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
-import 'package:powerdart/src/model/max_indexed_result.dart';
-import 'package:powerdart/src/psd_analysis/signal_max_indexed.dart';
+import 'package:powerdart_v2/src/model/max_indexed_result.dart';
+import 'package:powerdart_v2/src/psd_analysis/signal_max_indexed.dart';
 
 void main() {
   test("max indexed", () {

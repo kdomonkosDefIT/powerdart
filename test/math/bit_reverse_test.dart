@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:powerdart/src/math/bit_reverse.dart';
+import 'package:powerdart_v2/src/math/bit_reverse.dart';
 
 void main() {
   test("rotate 00001 3 times and get 00100", () {

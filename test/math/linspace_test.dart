@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:powerdart/src/math/linspace.dart';
+import 'package:powerdart_v2/src/math/linspace.dart';
 
 import '../utils/truncate.dart';
 

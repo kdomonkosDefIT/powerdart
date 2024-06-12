@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:powerdart/src/psd_analysis/trapz.dart';
+import 'package:powerdart_v2/src/psd_analysis/trapz.dart';
 
 void main() {
   test('trapz y and x', () {

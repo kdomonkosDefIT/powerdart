@@ -8,7 +8,7 @@ To use this package add `powerdart` as a [dependency in your pubspec.yaml file.]
 
 Import the library.
 
-`import 'package:powerdart/powerdart.dart';`
+`import 'package:powerdart_v2/powerdart.dart';`
 
 Then create use the methods in the library.
 

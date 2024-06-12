@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:powerdart/src/model/max_indexed_result.dart';
+import 'package:powerdart_v2/src/model/max_indexed_result.dart';
 
 /// Return the max value and his index of the [signal]
 /// [signal]: [List] of [double] to find the max

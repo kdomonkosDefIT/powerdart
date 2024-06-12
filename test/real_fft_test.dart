@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 import 'package:complex/complex.dart';
-import 'package:powerdart/src/dft/real_fft.dart';
+import 'package:powerdart_v2/src/dft/real_fft.dart';
 
 import 'utils/complexListTruncate.dart';
 

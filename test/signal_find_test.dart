@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:powerdart/src/psd_analysis/signal_find.dart' as lib;
+import 'package:powerdart_v2/src/psd_analysis/signal_find.dart' as lib;
 
 void main() {
   test("find", () {

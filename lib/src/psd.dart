@@ -1,10 +1,10 @@
-import 'package:powerdart/src/math/linspace.dart';
-import 'package:powerdart/src/math/signal_abs.dart';
-import 'package:powerdart/src/math/signal_detrend.dart';
-import 'package:powerdart/src/math/signal_pow.dart';
-import 'package:powerdart/src/math/signal_times_number.dart';
-import 'package:powerdart/src/dft/real_fft.dart';
-import 'package:powerdart/src/model/psd_result.dart';
+import 'package:powerdart_v2/src/math/linspace.dart';
+import 'package:powerdart_v2/src/math/signal_abs.dart';
+import 'package:powerdart_v2/src/math/signal_detrend.dart';
+import 'package:powerdart_v2/src/math/signal_pow.dart';
+import 'package:powerdart_v2/src/math/signal_times_number.dart';
+import 'package:powerdart_v2/src/dft/real_fft.dart';
+import 'package:powerdart_v2/src/model/psd_result.dart';
 
 /// Compute the Power Spectral Density
 ///
