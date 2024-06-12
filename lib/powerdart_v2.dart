@@ -1,4 +1,4 @@
-library powerdart;
+library powerdart_v2;
 
 // The PSD method
 export 'src/psd.dart';
