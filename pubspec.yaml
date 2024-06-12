@@ -4,8 +4,6 @@ description: >-
   Compute the Power Spectral Density (PSD) on Dart.
   This package runs everywhere dart runs.
 version: 0.0.3
-authors:
-  - Lorenzo Calisti <l.calisti96@gmail.com>
 homepage: https://github.com/kdomonkosDefIT/powerdart
 repository: https://github.com/kdomonkosDefIT/powerdart
 issue_tracker: https://github.com/kdomonkosDefIT/powerdart/issues

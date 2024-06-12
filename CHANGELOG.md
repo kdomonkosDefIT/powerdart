@@ -1,3 +1,7 @@
+## 0.0.3 - 2024/06/12 Update Dart version
+
+* Updated Dart version to support null safety
+
 ## 0.0.2 - 2020/05/11 Fix PSD algorithm
 
 * Fix the generation of the normalized frequency vector in psd
